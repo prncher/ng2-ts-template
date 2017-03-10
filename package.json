@@ -1,13 +1,14 @@
 {
-  "name": "angular-quickstart",
+  "name": "ng2-ts-template",
   "version": "1.0.0",
   "description": "QuickStart package.json from the documentation, supplemented with testing support",
   "scripts": {
     "build": "tsc -p src/",
-    "serve": "lite-server -c=bs-config.json"
+    "serve": "lite-server -c=bs-config.json",
+    "test": "karma start karma.conf.js --single-run"
   },
   "keywords": [],
-  "author": "",
+  "author": "Prince Cheruvathur",
   "license": "MIT",
   "dependencies": {
     "@angular/common": "^2.4.9",
@@ -21,7 +22,14 @@
     "zone.js": "^0.7.8"
   },
   "devDependencies": {
+    "@types/jasmine": "^2.5.44",
     "@types/node": "^7.0.8",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-jasmine-html-reporter": "^0.2.2",
     "lite-server": "^2.3.0",
     "typescript": "^2.2.1"
   },
